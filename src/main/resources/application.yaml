@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: 
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/caixa_db
+    username: banco_caixa
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: caixa_economica
+    password: banco_01
